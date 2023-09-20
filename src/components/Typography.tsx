@@ -24,3 +24,21 @@ export const Text = styled.p<Props>`
   color: ${({ theme }) => theme.colors.text};
   font-weight: ${({ $isBold }) => ($isBold ? 700 : 400)};
 `
+
+export const TextStats = styled(Text)`
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+`
+
+export const TextBig = styled(Text)`
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: ${({ theme }) => theme.colors.headings};
+`
+
+export const TextToggle = styled.label`
+  font-size: 0.875rem;
+  color: ${({ theme }) => theme.colors.text};
+`

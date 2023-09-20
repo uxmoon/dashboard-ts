@@ -30,6 +30,7 @@ export const StatsText = styled.p<Props>`
     $flexDirection ? $flexDirection : 'row'};
   font-size: 2rem;
   font-weight: 700;
+  color: ${({ theme }) => theme.colors.headings};
   span {
     display: block;
     font-size: 0.875rem;

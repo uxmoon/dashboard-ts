@@ -1,6 +1,6 @@
 import Toggle from 'react-toggle'
 import 'react-toggle/style.css'
-import { Heading1, Text } from '../Typography'
+import { Heading1, Text, TextToggle } from '../Typography'
 import { Container, Flex } from '../helpers'
 import { useState } from 'react'
 
@@ -23,9 +23,11 @@ const NavBar = ({ toggleTheme, isDarkTheme }: Props) => {
           <Heading1>Social Media dashboard</Heading1>
           <Text>Total followers</Text>
         </div>
-        <Flex $gap={0.5}>
-          Dark mode
-          <Toggle onChange={onToggle} />
+        <Flex $gap={0.5} $alignItems='center'>
+          <TextToggle htmlFor='mode'>
+            Dark Mode
+            <Toggle onChange={onToggle} icons={false} id='mode' />
+          </TextToggle>
         </Flex>
       </Flex>
     </Container>

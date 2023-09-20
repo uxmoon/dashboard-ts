@@ -1,9 +1,8 @@
 import Card from '../components/Card'
-import { TextFollowers } from '../components/TextFollowers'
 import { SocialIcon } from '../components/SocialIcon'
 import { Container, Flex, Grid } from '../components/helpers'
 import { Stats, StatsArrow } from '../components/Stats'
-import { Text } from './Typography'
+import { Text, TextBig, TextStats } from './Typography'
 
 const Overview = () => {
   return (
@@ -14,9 +13,9 @@ const Overview = () => {
             <SocialIcon src='img/icon-facebook.svg' />
             <Text>@username</Text>
           </Flex>
-          <TextFollowers>
-            8888 <span>followers</span>
-          </TextFollowers>
+          <TextBig>
+            1234 <TextStats as='span'>followers</TextStats>
+          </TextBig>
           <Stats $justifyContent='center'>
             <StatsArrow src='img/icon-up.svg' /> 88 today
           </Stats>
@@ -26,9 +25,9 @@ const Overview = () => {
             <SocialIcon src='img/icon-twitter.svg' />
             <Text>@username</Text>
           </Flex>
-          <TextFollowers>
-            8888 <span>followers</span>
-          </TextFollowers>
+          <TextBig>
+            8888 <TextStats as='span'>followers</TextStats>
+          </TextBig>
           <Stats $justifyContent='center' $decrease>
             <StatsArrow src='img/icon-down.svg' /> 88 today
           </Stats>
@@ -38,9 +37,9 @@ const Overview = () => {
             <SocialIcon src='img/icon-instagram.svg' />
             <Text>@username</Text>
           </Flex>
-          <TextFollowers>
-            8888 <span>followers</span>
-          </TextFollowers>
+          <TextBig>
+            8888 <TextStats as='span'>followers</TextStats>
+          </TextBig>
           <Stats $justifyContent='center'>
             <StatsArrow src='img/icon-up.svg' /> 88 today
           </Stats>
@@ -50,9 +49,9 @@ const Overview = () => {
             <SocialIcon src='img/icon-youtube.svg' />
             <Text>User Name</Text>
           </Flex>
-          <TextFollowers>
-            8888 <span>subscribers</span>
-          </TextFollowers>
+          <TextBig>
+            8888 <TextStats as='span'>subscribers</TextStats>
+          </TextBig>
           <Stats $justifyContent='center'>
             <StatsArrow src='img/icon-up.svg' /> 88 today
           </Stats>
