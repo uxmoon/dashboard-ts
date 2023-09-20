@@ -7,7 +7,8 @@ export const theme = {
     social: {
       facebook: 'hsl(195, 100%, 50%)',
       twitter: 'hsl(203, 89%, 53%)',
-      instagram: 'hsl(329, 70%, 58%)',
+      instagram:
+        'linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%))',
       youtube: 'hsl(348, 97%, 39%)',
     },
     toggle: {
