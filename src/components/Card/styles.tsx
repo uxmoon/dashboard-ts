@@ -20,7 +20,7 @@ const handleVariant = (theme, variant) => {
 
 export const StyledCard = styled.div<Props>`
   border-radius: 0.5rem;
-  background-color: ${({ theme }) => theme.colors.light.light_grayish_blue};
+  background-color: ${({ theme }) => theme.colors.card};
   padding: 1rem;
   margin-bottom: 1rem;
   position: relative;

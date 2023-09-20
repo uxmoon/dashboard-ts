@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-export default createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
   /* Box sizing rules */
   *,
   *::before,
@@ -33,14 +33,14 @@ export default createGlobalStyle`
     line-height: 1.5;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    color: ${({ theme }) => theme.colors.light.very_dark_blue};
-    background: ${({ theme }) => theme.colors.light.white};
+    color: ${({ theme }) => theme.colors.text};
+    background: ${({ theme }) => theme.colors.body};
     background: linear-gradient(
       180deg,
-      ${({ theme }) => theme.colors.light.very_pale_blue} 0%,
-      ${({ theme }) => theme.colors.light.very_pale_blue} 30%,
-      ${({ theme }) => theme.colors.light.white} 30%,
-      ${({ theme }) => theme.colors.light.white} 100%
+      ${({ theme }) => theme.colors.bodyPattern} 0%,
+      ${({ theme }) => theme.colors.bodyPattern} 30%,
+      ${({ theme }) => theme.colors.body} 30%,
+      ${({ theme }) => theme.colors.body} 100%
     );
     padding: 2rem 1rem 1rem;
   }

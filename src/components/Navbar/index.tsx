@@ -2,8 +2,20 @@ import Toggle from 'react-toggle'
 import 'react-toggle/style.css'
 import { Heading1, Text } from '../Typography'
 import { Container, Flex } from '../helpers'
+import { useState } from 'react'
 
-const NavBar = () => {
+interface Props {
+  toggleTheme: () => void
+  isDarkTheme: boolean
+}
+
+const NavBar = ({ toggleTheme, isDarkTheme }: Props) => {
+  const [isToggled, setIsToggled] = useState(isDarkTheme)
+
+  const onToggle = () => {
+    setIsToggled(!isToggled)
+    toggleTheme()
+  }
   return (
     <Container $marginBottom={3}>
       <Flex $justifyContent='space-between'>
@@ -13,7 +25,7 @@ const NavBar = () => {
         </div>
         <Flex $gap={0.5}>
           Dark mode
-          <Toggle />
+          <Toggle onChange={onToggle} />
         </Flex>
       </Flex>
     </Container>

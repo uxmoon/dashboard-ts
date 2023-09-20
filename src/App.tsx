@@ -1,17 +1,23 @@
-import GlobalStyle from './styles/global'
+import { useState } from 'react'
+import { GlobalStyles } from './styles/global'
 import { ThemeProvider } from 'styled-components'
 
 import NavBar from './components/Navbar'
 import Overview from './components/Overview'
 import OverviewToday from './components/OverviewToday'
-import { theme } from './theme'
+import { darkTheme, lightTheme } from './theme'
 
 function App() {
+  const [theme, setTheme] = useState('lightTheme')
+  const isDarkTheme = theme === 'darkTheme'
+  const toggleTheme = () => {
+    setTheme(isDarkTheme ? 'lightTheme' : 'darkTheme')
+  }
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
       <>
-        <GlobalStyle />
-        <NavBar />
+        <GlobalStyles />
+        <NavBar toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
         <Overview />
         <OverviewToday />
       </>
