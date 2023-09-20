@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components'
 import NavBar from './components/Navbar'
 import Overview from './components/Overview'
 import OverviewToday from './components/OverviewToday'
-import { darkTheme, lightTheme } from './theme'
+import { darkTheme, lightTheme } from './styles/theme'
 
 function App() {
   const [theme, setTheme] = useState('lightTheme')
