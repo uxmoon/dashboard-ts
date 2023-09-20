@@ -46,7 +46,8 @@ export const darkTheme = {
     },
     toggle: {
       default: 'hsl(230, 22%, 74%)',
-      active: 'linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%)',
+      active:
+        'linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%))',
     },
   },
 }
