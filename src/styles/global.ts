@@ -85,4 +85,21 @@ export const GlobalStyles = createGlobalStyle`
   :target {
     scroll-margin-block: 5ex;
   }
+
+  /* react-toggle override styles */
+  .react-toggle-track {
+    background-color: ${({ theme }) => theme.colors.toggle.default};
+  }
+  .react-toggle-thumb {
+    border: 1px solid ${({ theme }) => theme.colors.toggle.default};
+  }
+  .react-toggle.react-toggle--checked {
+    .react-toggle-track {
+      background: ${({ theme }) => theme.colors.toggle.active};
+    }
+    .react-toggle-thumb {
+      border: 1px solid ${({ theme }) => theme.colors.bodyPattern};
+      background-color: ${({ theme }) => theme.colors.bodyPattern};
+    }
+  }
 `
