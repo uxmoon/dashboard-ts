@@ -17,14 +17,17 @@ export const Flex = styled.div<Props>`
   gap: ${({ $gap }) => ($gap ? $gap + 'rem' : 0)};
   flex-direction: ${({ $flexDirection }) =>
     $flexDirection ? $flexDirection : 'row'};
+  margin-bottom: ${({ $marginBottom }) =>
+    $marginBottom ? $marginBottom + 'rem' : 0};
 `
 
 export const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  @media (min-width: 768px) {
+  gap: 1rem;
+  @media (min-width: 48rem) {
     grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
   }
 `
 

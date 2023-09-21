@@ -33,13 +33,21 @@ export const TextStats = styled(Text)`
   display: block;
   text-transform: uppercase;
   letter-spacing: 0.125rem;
+  @media (min-width: 48rem) {
+    letter-spacing: 0.25rem;
+  }
 `
 
 export const TextBig = styled(Text)`
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  line-height: 1.2;
   font-weight: 700;
   color: ${({ theme }) => theme.colors.headings};
+  margin-bottom: 1.5rem;
+  @media (min-width: 48rem) {
+    font-size: 3.5rem;
+  }
 `
 
 export const TextToggle = styled.label`
