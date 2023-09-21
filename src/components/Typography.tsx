@@ -3,17 +3,20 @@ import styled from 'styled-components'
 interface Props {
   $marginBottom?: number
   $isBold?: boolean
+  $size?: string
 }
 
-export const Heading1 = styled.h1<Props>`
-  font-size: 1.75rem;
-  margin-bottom: ${({ $marginBottom }) =>
-    $marginBottom ? $marginBottom + 'rem' : 0};
-  color: ${({ theme }) => theme.colors.headings};
-`
+const handleSize = ($size?: string) => {
+  switch ($size) {
+    case 'lg':
+      return '1.75rem'
+    case 'md':
+      return '1.5rem'
+  }
+}
 
-export const Heading2 = styled.h2<Props>`
-  font-size: 1.5rem;
+export const Heading = styled.h2<Props>`
+  font-size: ${({ $size }) => handleSize($size)};
   margin-bottom: ${({ $marginBottom }) =>
     $marginBottom ? $marginBottom + 'rem' : 0};
   color: ${({ theme }) => theme.colors.headings};

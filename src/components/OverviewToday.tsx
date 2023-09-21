@@ -1,14 +1,16 @@
 import Card from './Card'
 import { SocialIcon } from './SocialIcon'
 import { Stats, StatsArrow, StatsText } from './Stats'
-import { Heading2 } from './Typography'
+import { Heading } from './Typography'
 import { Container, Flex, Grid } from './helpers'
 
 const OverviewToday = () => {
   return (
     <>
       <Container>
-        <Heading2 $marginBottom={1}>Overview - Today</Heading2>
+        <Heading $size='md' $marginBottom={1}>
+          Overview - Today
+        </Heading>
         <Grid>
           <Card>
             <Flex $justifyContent='space-between'>

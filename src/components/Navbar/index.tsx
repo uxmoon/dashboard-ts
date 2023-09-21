@@ -1,10 +1,12 @@
-import { Heading1, Text } from '../Typography'
+import { Heading, Text } from '../Typography'
 
 const NavBar = () => {
   return (
     <div>
-      <Heading1>Social Media dashboard</Heading1>
-      <Text>Total followers</Text>
+      <Heading $size='lg' as='h1'>
+        Social Media dashboard
+      </Heading>
+      <Text>Total Followers: 23,004</Text>
     </div>
   )
 }
