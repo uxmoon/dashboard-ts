@@ -6,10 +6,15 @@ import Stats from './Stats/Stats'
 
 const Overview = () => {
   return (
-    <Container>
+    <Container $marginBottom={3}>
       <Grid>
         <Card hasBorder variant='facebook'>
-          <Flex $alignItems='center' $gap={0.5} $justifyContent='center'>
+          <Flex
+            $alignItems='center'
+            $gap={0.5}
+            $justifyContent='center'
+            $marginBottom={1}
+          >
             <SocialIcon src='img/icon-facebook.svg' alt='Facebook' />
             <Text>@nathanf</Text>
           </Flex>
@@ -21,7 +26,12 @@ const Overview = () => {
           </Center>
         </Card>
         <Card hasBorder variant='twitter'>
-          <Flex $alignItems='center' $gap={0.5} $justifyContent='center'>
+          <Flex
+            $alignItems='center'
+            $gap={0.5}
+            $justifyContent='center'
+            $marginBottom={1}
+          >
             <SocialIcon src='img/icon-twitter.svg' alt='Twitter' />
             <Text>@nathanf</Text>
           </Flex>
@@ -33,7 +43,12 @@ const Overview = () => {
           </Center>
         </Card>
         <Card hasBorder variant='instagram'>
-          <Flex $alignItems='center' $gap={0.5} $justifyContent='center'>
+          <Flex
+            $alignItems='center'
+            $gap={0.5}
+            $justifyContent='center'
+            $marginBottom={1}
+          >
             <SocialIcon src='img/icon-instagram.svg' alt='Instagram' />
             <Text>@realnathanf</Text>
           </Flex>
@@ -45,7 +60,12 @@ const Overview = () => {
           </Center>
         </Card>
         <Card hasBorder variant='youtube'>
-          <Flex $alignItems='center' $gap={0.5} $justifyContent='center'>
+          <Flex
+            $alignItems='center'
+            $gap={0.5}
+            $justifyContent='center'
+            $marginBottom={1}
+          >
             <SocialIcon src='img/icon-youtube.svg' alt='YouTube' />
             <Text>Nathan F.</Text>
           </Flex>
