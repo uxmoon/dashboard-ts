@@ -1,6 +1,7 @@
 import Card from './Card'
 import { SocialIcon } from './SocialIcon'
-import { Stats, StatsArrow, StatsText } from './Stats'
+import Stats from './Stats/Stats'
+import { StatsText } from './Typography'
 import { Heading } from './Typography'
 import { Container, Flex, Grid } from './helpers'
 
@@ -19,9 +20,7 @@ const OverviewToday = () => {
               </StatsText>
               <Flex $flexDirection='column'>
                 <SocialIcon src='img/icon-facebook.svg' alt='Facebook' />
-                <Stats>
-                  <StatsArrow src='img/icon-up.svg' alt='Increase' /> 3%
-                </Stats>
+                <Stats>3%</Stats>
               </Flex>
             </Flex>
           </Card>
@@ -32,9 +31,7 @@ const OverviewToday = () => {
               </StatsText>
               <Flex $flexDirection='column'>
                 <SocialIcon src='img/icon-facebook.svg' alt='Facebook' />
-                <Stats $decrease>
-                  <StatsArrow src='img/icon-down.svg' alt='Decrease' /> 2%
-                </Stats>
+                <Stats isDecrease>2%</Stats>
               </Flex>
             </Flex>
           </Card>
@@ -45,9 +42,7 @@ const OverviewToday = () => {
               </StatsText>
               <Flex $flexDirection='column'>
                 <SocialIcon src='img/icon-instagram.svg' alt='Instagram' />
-                <Stats>
-                  <StatsArrow src='img/icon-up.svg' alt='Increase' /> 2257%
-                </Stats>
+                <Stats>2257%</Stats>
               </Flex>
             </Flex>
           </Card>
@@ -58,9 +53,7 @@ const OverviewToday = () => {
               </StatsText>
               <Flex $flexDirection='column'>
                 <SocialIcon src='img/icon-instagram.svg' alt='Instagram' />
-                <Stats>
-                  <StatsArrow src='img/icon-up.svg' alt='Increase' /> 1375%
-                </Stats>
+                <Stats>1375%</Stats>
               </Flex>
             </Flex>
           </Card>
@@ -71,9 +64,7 @@ const OverviewToday = () => {
               </StatsText>
               <Flex $flexDirection='column'>
                 <SocialIcon src='img/icon-twitter.svg' alt='Twitter' />
-                <Stats>
-                  <StatsArrow src='img/icon-up.svg' alt='Increase' /> 303%
-                </Stats>
+                <Stats>303%</Stats>
               </Flex>
             </Flex>
           </Card>
@@ -84,9 +75,7 @@ const OverviewToday = () => {
               </StatsText>
               <Flex $flexDirection='column'>
                 <SocialIcon src='img/icon-twitter.svg' alt='Twitter' />
-                <Stats>
-                  <StatsArrow src='img/icon-up.svg' alt='Increase' /> 19%
-                </Stats>
+                <Stats>19%</Stats>
               </Flex>
             </Flex>
           </Card>
@@ -97,9 +86,7 @@ const OverviewToday = () => {
               </StatsText>
               <Flex $flexDirection='column'>
                 <SocialIcon src='img/icon-youtube.svg' alt='YouTube' />
-                <Stats $decrease>
-                  <StatsArrow src='img/icon-down.svg' alt='Decrease' /> 19%
-                </Stats>
+                <Stats isDecrease>19%</Stats>
               </Flex>
             </Flex>
           </Card>
@@ -110,9 +97,7 @@ const OverviewToday = () => {
               </StatsText>
               <Flex $flexDirection='column'>
                 <SocialIcon src='img/icon-youtube.svg' alt='YouTube' />
-                <Stats $decrease>
-                  <StatsArrow src='img/icon-down.svg' alt='Decrease' /> 12%
-                </Stats>
+                <Stats isDecrease>12%</Stats>
               </Flex>
             </Flex>
           </Card>

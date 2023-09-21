@@ -35,3 +35,9 @@ export const Container = styled.div<Props>`
   margin-bottom: ${({ $marginBottom }) =>
     $marginBottom ? $marginBottom + 'rem' : 0};
 `
+
+export const Center = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`

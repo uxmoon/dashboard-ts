@@ -1,8 +1,8 @@
 import Card from '../components/Card'
 import { SocialIcon } from '../components/SocialIcon'
-import { Container, Flex, Grid } from '../components/helpers'
-import { Stats, StatsArrow } from '../components/Stats'
+import { Center, Container, Flex, Grid } from '../components/helpers'
 import { Text, TextBig, TextStats } from './Typography'
+import Stats from './Stats/Stats'
 
 const Overview = () => {
   return (
@@ -16,9 +16,9 @@ const Overview = () => {
           <TextBig>
             1987 <TextStats as='span'>followers</TextStats>
           </TextBig>
-          <Stats $justifyContent='center'>
-            <StatsArrow src='img/icon-up.svg' alt='Increase' /> 12 Today
-          </Stats>
+          <Center>
+            <Stats>12 Today</Stats>
+          </Center>
         </Card>
         <Card hasBorder variant='twitter'>
           <Flex $alignItems='center' $gap={0.5} $justifyContent='center'>
@@ -28,9 +28,9 @@ const Overview = () => {
           <TextBig>
             1044 <TextStats as='span'>followers</TextStats>
           </TextBig>
-          <Stats $justifyContent='center'>
-            <StatsArrow src='img/icon-up.svg' alt='Increase' /> 99 Today
-          </Stats>
+          <Center>
+            <Stats>99 Today</Stats>
+          </Center>
         </Card>
         <Card hasBorder variant='instagram'>
           <Flex $alignItems='center' $gap={0.5} $justifyContent='center'>
@@ -40,9 +40,9 @@ const Overview = () => {
           <TextBig>
             11k <TextStats as='span'>followers</TextStats>
           </TextBig>
-          <Stats $justifyContent='center'>
-            <StatsArrow src='img/icon-up.svg' alt='Increase' /> 1099 Today
-          </Stats>
+          <Center>
+            <Stats>1099 Today</Stats>
+          </Center>
         </Card>
         <Card hasBorder variant='youtube'>
           <Flex $alignItems='center' $gap={0.5} $justifyContent='center'>
@@ -52,9 +52,9 @@ const Overview = () => {
           <TextBig>
             8239 <TextStats as='span'>subscribers</TextStats>
           </TextBig>
-          <Stats $justifyContent='center' $decrease>
-            <StatsArrow src='img/icon-down.svg' alt='Decrease' /> 144 Today
-          </Stats>
+          <Center>
+            <Stats isDecrease>144 Today</Stats>
+          </Center>
         </Card>
       </Grid>
     </Container>
