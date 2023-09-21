@@ -5,7 +5,9 @@ import { ThemeProvider } from 'styled-components'
 import NavBar from './components/Navbar'
 import Overview from './components/Overview'
 import OverviewToday from './components/OverviewToday'
+import { Container, Flex } from './components/helpers'
 import { darkTheme, lightTheme } from './styles/theme'
+import Toggler from './components/Toggler'
 
 function App() {
   const [theme, setTheme] = useState('lightTheme')
@@ -17,9 +19,18 @@ function App() {
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
       <>
         <GlobalStyles />
-        <NavBar toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
-        <Overview />
-        <OverviewToday />
+        <header>
+          <Container $marginBottom={3}>
+            <Flex $justifyContent='space-between'>
+              <NavBar />
+              <Toggler toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
+            </Flex>
+          </Container>
+        </header>
+        <main>
+          <Overview />
+          <OverviewToday />
+        </main>
       </>
     </ThemeProvider>
   )
