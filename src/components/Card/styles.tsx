@@ -21,10 +21,13 @@ const handleVariant = (theme: DefaultTheme, variant?: string) => {
 export const StyledCard = styled.div<Props>`
   border-radius: 0.5rem;
   background-color: ${({ theme }) => theme.colors.card};
-  padding: 1.75rem;
-  margin-bottom: 1rem;
+  padding: 1rem;
   position: relative;
   overflow: hidden;
+
+  @media (min-width: 48rem) {
+    padding: 1.75rem;
+  }
 
   &:before {
     ${({ $hasBorder, $variant }) =>
