@@ -12,7 +12,7 @@ export const CardGrid = styled.div`
     'two'
     'three';
   gap: 0.5rem;
-  @media (min-width: 48rem) {
+  @media (min-width: 60rem) {
     gap: 0;
     grid-template-areas:
       'two one'
@@ -25,7 +25,7 @@ export const CardGrid = styled.div`
 export const CardGridItem = styled.div<Props>`
   grid-area: ${({ $areaName }) => $areaName};
   display: flex;
-  @media (min-width: 48rem) {
+  @media (min-width: 60rem) {
     justify-content: ${({ $justifyContent }) =>
       $justifyContent ? $justifyContent : 'flex-start'};
   }

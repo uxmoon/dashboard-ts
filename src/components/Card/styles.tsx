@@ -25,8 +25,8 @@ export const StyledCard = styled.div<Props>`
   position: relative;
   overflow: hidden;
 
-  @media (min-width: 48rem) {
-    padding: 1.75rem;
+  @media (min-width: 60rem) {
+    padding: 1.5rem;
   }
 
   &:before {

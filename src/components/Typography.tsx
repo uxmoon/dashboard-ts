@@ -33,7 +33,7 @@ export const TextStats = styled(Text)`
   display: block;
   text-transform: uppercase;
   letter-spacing: 0.125rem;
-  @media (min-width: 48rem) {
+  @media (min-width: 60rem) {
     letter-spacing: 0.25rem;
   }
 `
@@ -45,7 +45,7 @@ export const TextBig = styled(Text)`
   font-weight: 700;
   color: ${({ theme }) => theme.colors.headings};
   margin-bottom: 1.5rem;
-  @media (min-width: 48rem) {
+  @media (min-width: 60rem) {
     font-size: 3.5rem;
   }
 `
