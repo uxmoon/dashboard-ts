@@ -18,10 +18,8 @@ const Toggler = ({ toggleTheme, isDarkTheme }: Props) => {
   }
   return (
     <Flex $gap={0.5} $alignItems='center'>
-      <TextToggle htmlFor='mode'>
-        Dark Mode
-        <Toggle onChange={onToggle} icons={false} id='mode' />
-      </TextToggle>
+      <TextToggle htmlFor='mode'>Dark Mode</TextToggle>
+      <Toggle onChange={onToggle} icons={false} id='mode' />
     </Flex>
   )
 }
