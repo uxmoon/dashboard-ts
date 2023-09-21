@@ -17,10 +17,10 @@ const OverviewToday = () => {
               <StatsText $flexDirection='column-reverse'>
                 87 <span>Page views</span>
               </StatsText>
-              <Flex $flexDirection='column' $justifyContent='space-between'>
+              <Flex $flexDirection='column'>
                 <SocialIcon src='img/icon-facebook.svg' alt='Facebook' />
                 <Stats>
-                  <StatsArrow src='img/icon-up.svg' alt='Increase' /> 11
+                  <StatsArrow src='img/icon-up.svg' alt='Increase' /> 3%
                 </Stats>
               </Flex>
             </Flex>
@@ -30,10 +30,10 @@ const OverviewToday = () => {
               <StatsText $flexDirection='column-reverse'>
                 52 <span>Likes</span>
               </StatsText>
-              <Flex $flexDirection='column' $justifyContent='space-between'>
+              <Flex $flexDirection='column'>
                 <SocialIcon src='img/icon-facebook.svg' alt='Facebook' />
                 <Stats $decrease>
-                  <StatsArrow src='img/icon-down.svg' alt='Decrease' /> 22
+                  <StatsArrow src='img/icon-down.svg' alt='Decrease' /> 2%
                 </Stats>
               </Flex>
             </Flex>
@@ -41,12 +41,12 @@ const OverviewToday = () => {
           <Card>
             <Flex $justifyContent='space-between'>
               <StatsText $flexDirection='column-reverse'>
-                52 <span>Likes</span>
+                5462 <span>Profile Views</span>
               </StatsText>
-              <Flex $flexDirection='column' $justifyContent='space-between'>
+              <Flex $flexDirection='column'>
                 <SocialIcon src='img/icon-instagram.svg' alt='Instagram' />
-                <Stats $decrease>
-                  <StatsArrow src='img/icon-down.svg' alt='Decrease' /> 22
+                <Stats>
+                  <StatsArrow src='img/icon-up.svg' alt='Increase' /> 2257%
                 </Stats>
               </Flex>
             </Flex>
@@ -54,12 +54,12 @@ const OverviewToday = () => {
           <Card>
             <Flex $justifyContent='space-between'>
               <StatsText $flexDirection='column-reverse'>
-                52 <span>Likes</span>
+                52k <span>Profile Views</span>
               </StatsText>
-              <Flex $flexDirection='column' $justifyContent='space-between'>
+              <Flex $flexDirection='column'>
                 <SocialIcon src='img/icon-instagram.svg' alt='Instagram' />
-                <Stats $decrease>
-                  <StatsArrow src='img/icon-down.svg' alt='Decrease' /> 22
+                <Stats>
+                  <StatsArrow src='img/icon-down.svg' alt='Increase' /> 1375%
                 </Stats>
               </Flex>
             </Flex>
@@ -67,12 +67,12 @@ const OverviewToday = () => {
           <Card>
             <Flex $justifyContent='space-between'>
               <StatsText $flexDirection='column-reverse'>
-                87 <span>Page views</span>
+                117 <span>Retweets</span>
               </StatsText>
-              <Flex $flexDirection='column' $justifyContent='space-between'>
+              <Flex $flexDirection='column'>
                 <SocialIcon src='img/icon-twitter.svg' alt='Twitter' />
                 <Stats>
-                  <StatsArrow src='img/icon-up.svg' alt='Increase' /> 11
+                  <StatsArrow src='img/icon-up.svg' alt='Increase' /> 303%
                 </Stats>
               </Flex>
             </Flex>
@@ -80,12 +80,12 @@ const OverviewToday = () => {
           <Card>
             <Flex $justifyContent='space-between'>
               <StatsText $flexDirection='column-reverse'>
-                52 <span>Likes</span>
+                507 <span>Likes</span>
               </StatsText>
-              <Flex $flexDirection='column' $justifyContent='space-between'>
+              <Flex $flexDirection='column'>
                 <SocialIcon src='img/icon-twitter.svg' alt='Twitter' />
-                <Stats $decrease>
-                  <StatsArrow src='img/icon-down.svg' alt='Decrease' /> 22
+                <Stats>
+                  <StatsArrow src='img/icon-up.svg' alt='Increase' /> 19%
                 </Stats>
               </Flex>
             </Flex>
@@ -93,12 +93,12 @@ const OverviewToday = () => {
           <Card>
             <Flex $justifyContent='space-between'>
               <StatsText $flexDirection='column-reverse'>
-                52 <span>Likes</span>
+                107 <span>Likes</span>
               </StatsText>
-              <Flex $flexDirection='column' $justifyContent='space-between'>
+              <Flex $flexDirection='column'>
                 <SocialIcon src='img/icon-youtube.svg' alt='YouTube' />
                 <Stats $decrease>
-                  <StatsArrow src='img/icon-down.svg' alt='Decrease' /> 22
+                  <StatsArrow src='img/icon-down.svg' alt='Decrease' /> 19%
                 </Stats>
               </Flex>
             </Flex>
@@ -106,12 +106,12 @@ const OverviewToday = () => {
           <Card>
             <Flex $justifyContent='space-between'>
               <StatsText $flexDirection='column-reverse'>
-                52 <span>Likes</span>
+                1407 <span>Total Views</span>
               </StatsText>
-              <Flex $flexDirection='column' $justifyContent='space-between'>
+              <Flex $flexDirection='column'>
                 <SocialIcon src='img/icon-youtube.svg' alt='YouTube' />
                 <Stats $decrease>
-                  <StatsArrow src='img/icon-down.svg' alt='Decrease' /> 22
+                  <StatsArrow src='img/icon-down.svg' alt='Decrease' /> 12%
                 </Stats>
               </Flex>
             </Flex>

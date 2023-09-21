@@ -4,7 +4,7 @@ const NavBar = () => {
   return (
     <div>
       <Heading $size='lg' as='h1'>
-        Social Media dashboard
+        Social Media Dashboard
       </Heading>
       <Text>Total Followers: 23,004</Text>
     </div>
