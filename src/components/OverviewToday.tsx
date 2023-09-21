@@ -59,7 +59,7 @@ const OverviewToday = () => {
               <Flex $flexDirection='column'>
                 <SocialIcon src='img/icon-instagram.svg' alt='Instagram' />
                 <Stats>
-                  <StatsArrow src='img/icon-down.svg' alt='Increase' /> 1375%
+                  <StatsArrow src='img/icon-up.svg' alt='Increase' /> 1375%
                 </Stats>
               </Flex>
             </Flex>
