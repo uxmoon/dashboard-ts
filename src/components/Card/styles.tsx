@@ -1,11 +1,11 @@
-import styled, { css } from 'styled-components'
+import styled, { DefaultTheme, css } from 'styled-components'
 
 interface Props {
   $hasBorder?: boolean
   $variant?: string
 }
 
-const handleVariant = (theme, variant) => {
+const handleVariant = (theme: DefaultTheme, variant?: string) => {
   switch (variant) {
     case 'facebook':
       return theme.colors.social.facebook
@@ -27,7 +27,7 @@ export const StyledCard = styled.div<Props>`
   overflow: hidden;
 
   &:before {
-    ${({ $hasBorder }) =>
+    ${({ $hasBorder, $variant }) =>
       $hasBorder &&
       css`
         position: absolute;
@@ -36,7 +36,7 @@ export const StyledCard = styled.div<Props>`
         width: 100%;
         height: 4px;
         content: '';
-        background: ${({ theme, $variant }) => handleVariant(theme, $variant)};
+        background: ${({ theme }) => handleVariant(theme, $variant)};
       `};
   }
 `
