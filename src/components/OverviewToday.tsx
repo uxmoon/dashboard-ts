@@ -1,7 +1,7 @@
 import Card from './Card'
 import { CardGrid, CardGridItem } from './CardGrid'
 import { SocialIcon } from './SocialIcon'
-import Stats from './Stats/Stats'
+import Stats from './Stats'
 import { StatsText } from './Typography'
 import { Heading } from './Typography'
 import { Container, Grid } from './helpers'

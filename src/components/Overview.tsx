@@ -2,7 +2,7 @@ import Card from '../components/Card'
 import { SocialIcon } from '../components/SocialIcon'
 import { Center, Container, Flex, Grid } from '../components/helpers'
 import { Text, TextBig, TextStats } from './Typography'
-import Stats from './Stats/Stats'
+import Stats from './Stats'
 
 const Overview = () => {
   return (
