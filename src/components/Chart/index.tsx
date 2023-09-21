@@ -12,14 +12,14 @@ import CustomTooltip from './CustomTooltip'
 
 const Chart = () => {
   return (
-    <ResponsiveContainer width='100%' height={400}>
+    <ResponsiveContainer width='100%' height={220}>
       <LineChart
-        width={500}
         height={300}
         data={data}
         margin={{
           top: 12,
           right: 12,
+          left: 0,
         }}
       >
         <CartesianGrid strokeDasharray='3 3' />

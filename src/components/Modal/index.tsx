@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react'
+import { useRef, useEffect, useState, KeyboardEvent, ReactNode } from 'react'
 
 import { Dialog, CloseButton } from './styles'
 
@@ -6,15 +6,15 @@ interface ModalProps {
   isOpen: boolean
   hasCloseBtn?: boolean
   onClose?: () => void
-  children: React.ReactNode
+  children: ReactNode
 }
 
-const Modal: React.FC<ModalProps> = ({
+const Modal = ({
   isOpen,
   hasCloseBtn = true,
   onClose,
   children,
-}) => {
+}: ModalProps) => {
   const [isModalOpen, setModalOpen] = useState(isOpen)
   const modalRef = useRef<HTMLDialogElement | null>(null)
 
@@ -25,7 +25,7 @@ const Modal: React.FC<ModalProps> = ({
     setModalOpen(false)
   }
 
-  const handleKeyDown = (event: React.KeyboardEvent<HTMLDialogElement>) => {
+  const handleKeyDown = (event: KeyboardEvent<HTMLDialogElement>) => {
     if (event.key === 'Escape') {
       handleCloseModal()
     }

@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 
 export const Dialog = styled.dialog`
-  max-width: 20rem;
-  padding: 2rem;
+  width: 100%;
+  max-width: 62rem;
+  padding: 0;
   border: 0;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   position: relative;
   box-shadow: hsl(0 0% 0% / 10%) 0 0 0.5rem 0.25rem;
   &::backdrop {
