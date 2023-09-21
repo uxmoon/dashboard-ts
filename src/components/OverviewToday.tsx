@@ -16,9 +16,9 @@ const OverviewToday = () => {
                 87 <span>Page views</span>
               </StatsText>
               <Flex $flexDirection='column' $justifyContent='space-between'>
-                <SocialIcon src='img/icon-facebook.svg' />
+                <SocialIcon src='img/icon-facebook.svg' alt='Facebook' />
                 <Stats>
-                  <StatsArrow src='img/icon-up.svg' /> 11
+                  <StatsArrow src='img/icon-up.svg' alt='Increase' /> 11
                 </Stats>
               </Flex>
             </Flex>
@@ -29,9 +29,9 @@ const OverviewToday = () => {
                 52 <span>Likes</span>
               </StatsText>
               <Flex $flexDirection='column' $justifyContent='space-between'>
-                <SocialIcon src='img/icon-facebook.svg' />
+                <SocialIcon src='img/icon-facebook.svg' alt='Facebook' />
                 <Stats $decrease>
-                  <StatsArrow src='img/icon-down.svg' /> 22
+                  <StatsArrow src='img/icon-down.svg' alt='Decrease' /> 22
                 </Stats>
               </Flex>
             </Flex>
@@ -42,9 +42,9 @@ const OverviewToday = () => {
                 52 <span>Likes</span>
               </StatsText>
               <Flex $flexDirection='column' $justifyContent='space-between'>
-                <SocialIcon src='img/icon-instagram.svg' />
+                <SocialIcon src='img/icon-instagram.svg' alt='Instagram' />
                 <Stats $decrease>
-                  <StatsArrow src='img/icon-down.svg' /> 22
+                  <StatsArrow src='img/icon-down.svg' alt='Decrease' /> 22
                 </Stats>
               </Flex>
             </Flex>
@@ -55,9 +55,9 @@ const OverviewToday = () => {
                 52 <span>Likes</span>
               </StatsText>
               <Flex $flexDirection='column' $justifyContent='space-between'>
-                <SocialIcon src='img/icon-instagram.svg' />
+                <SocialIcon src='img/icon-instagram.svg' alt='Instagram' />
                 <Stats $decrease>
-                  <StatsArrow src='img/icon-down.svg' /> 22
+                  <StatsArrow src='img/icon-down.svg' alt='Decrease' /> 22
                 </Stats>
               </Flex>
             </Flex>
@@ -68,9 +68,9 @@ const OverviewToday = () => {
                 87 <span>Page views</span>
               </StatsText>
               <Flex $flexDirection='column' $justifyContent='space-between'>
-                <SocialIcon src='img/icon-twitter.svg' />
+                <SocialIcon src='img/icon-twitter.svg' alt='Twitter' />
                 <Stats>
-                  <StatsArrow src='img/icon-up.svg' /> 11
+                  <StatsArrow src='img/icon-up.svg' alt='Increase' /> 11
                 </Stats>
               </Flex>
             </Flex>
@@ -81,9 +81,9 @@ const OverviewToday = () => {
                 52 <span>Likes</span>
               </StatsText>
               <Flex $flexDirection='column' $justifyContent='space-between'>
-                <SocialIcon src='img/icon-twitter.svg' />
+                <SocialIcon src='img/icon-twitter.svg' alt='Twitter' />
                 <Stats $decrease>
-                  <StatsArrow src='img/icon-down.svg' /> 22
+                  <StatsArrow src='img/icon-down.svg' alt='Decrease' /> 22
                 </Stats>
               </Flex>
             </Flex>
@@ -94,9 +94,9 @@ const OverviewToday = () => {
                 52 <span>Likes</span>
               </StatsText>
               <Flex $flexDirection='column' $justifyContent='space-between'>
-                <SocialIcon src='img/icon-youtube.svg' />
+                <SocialIcon src='img/icon-youtube.svg' alt='YouTube' />
                 <Stats $decrease>
-                  <StatsArrow src='img/icon-down.svg' /> 22
+                  <StatsArrow src='img/icon-down.svg' alt='Decrease' /> 22
                 </Stats>
               </Flex>
             </Flex>
@@ -107,9 +107,9 @@ const OverviewToday = () => {
                 52 <span>Likes</span>
               </StatsText>
               <Flex $flexDirection='column' $justifyContent='space-between'>
-                <SocialIcon src='img/icon-youtube.svg' />
+                <SocialIcon src='img/icon-youtube.svg' alt='YouTube' />
                 <Stats $decrease>
-                  <StatsArrow src='img/icon-down.svg' /> 22
+                  <StatsArrow src='img/icon-down.svg' alt='Decrease' /> 22
                 </Stats>
               </Flex>
             </Flex>
