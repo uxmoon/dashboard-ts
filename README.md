@@ -1,27 +1,52 @@
-# React + TypeScript + Vite
+# Social media dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Small project made with:
 
-Currently, two official plugins are available:
+- [React + TypeScript](https://react.dev/)
+- [styled components](https://styled-components.com/)
+- [Recharts](https://recharts.org/en-US/)
+- [Vite](https://vitejs.dev/)
+- [react-toggle](https://www.npmjs.com/package/react-toggle)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+:rocket: [View Demo](https://dashboard-ts-chi.vercel.app/)
 
-## Expanding the ESLint configuration
+## Usage
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Clone this repository and run the following commands in your terminal.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```
+npm i
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Development
+
+- Create a light and dark theme with `styled components` and add theme provider.
+- `createContext` and `useContext` to open modal from child components.
+- Customize `react-toggle` based on design provided.
+- Added definition file for `styled components` for theme file.
+
+### Recharts
+
+- Customize chart based on design provided.
+- Add custom tooltip component to display number of followers.
+- Use `themeContext` to use colors from theme
+
+### Modal
+
+- Added reusable modal component with native `<dialog>` element
+- Use react modal to display stats chart
+- Hide close button label with css
+
+### Accessibility
+
+Replaced green and red colors for better color contrast based on report made with [Axe DevTools](https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd)
+
+- green: hsl(163, 73%, 28%)
+- red: hsl(356, 69%, 49%)
+
+## Pending
+
+- Store dark mode state in localStorage
+- Add loading skeleton
+- Add breakpoints list in styled components
