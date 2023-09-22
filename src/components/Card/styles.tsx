@@ -18,12 +18,20 @@ const handleVariant = (theme: DefaultTheme, variant?: string) => {
   }
 }
 
-export const StyledCard = styled.div<Props>`
+export const StyledCard = styled.button<Props>`
+  border: none;
+  appearance: none;
   border-radius: 0.5rem;
   background-color: ${({ theme }) => theme.colors.card};
   padding: 1rem;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: ${({ theme }) => theme.colors.cardHover};
+  }
 
   @media (min-width: 60rem) {
     padding: 1.5rem;

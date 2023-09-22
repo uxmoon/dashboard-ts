@@ -1,12 +1,15 @@
+import { useContext } from 'react'
 import Card from './Card'
 import { CardGrid, CardGridItem } from './CardGrid'
 import { SocialIcon } from './SocialIcon'
-import Stats from './Stats/Stats'
+import Stats from './Stats'
 import { StatsText } from './Typography'
 import { Heading } from './Typography'
 import { Container, Grid } from './helpers'
+import { ModalContext } from '../context/ModalContext'
 
 const OverviewToday = () => {
+  const { handleOpenModal } = useContext(ModalContext)
   return (
     <>
       <Container>
@@ -14,7 +17,7 @@ const OverviewToday = () => {
           Overview - Today
         </Heading>
         <Grid>
-          <Card>
+          <Card onClick={handleOpenModal}>
             <CardGrid>
               <CardGridItem $areaName='one' $justifyContent='end'>
                 <SocialIcon src='img/icon-facebook.svg' alt='Facebook' />
@@ -29,7 +32,7 @@ const OverviewToday = () => {
               </CardGridItem>
             </CardGrid>
           </Card>
-          <Card>
+          <Card onClick={handleOpenModal}>
             <CardGrid>
               <CardGridItem $areaName='one' $justifyContent='end'>
                 <SocialIcon src='img/icon-facebook.svg' alt='Facebook' />
@@ -44,7 +47,7 @@ const OverviewToday = () => {
               </CardGridItem>
             </CardGrid>
           </Card>
-          <Card>
+          <Card onClick={handleOpenModal}>
             <CardGrid>
               <CardGridItem $areaName='one' $justifyContent='end'>
                 <SocialIcon src='img/icon-instagram.svg' alt='Instagram' />
@@ -59,7 +62,7 @@ const OverviewToday = () => {
               </CardGridItem>
             </CardGrid>
           </Card>
-          <Card>
+          <Card onClick={handleOpenModal}>
             <CardGrid>
               <CardGridItem $areaName='one' $justifyContent='end'>
                 <SocialIcon src='img/icon-instagram.svg' alt='Instagram' />
@@ -74,7 +77,7 @@ const OverviewToday = () => {
               </CardGridItem>
             </CardGrid>
           </Card>
-          <Card>
+          <Card onClick={handleOpenModal}>
             <CardGrid>
               <CardGridItem $areaName='one' $justifyContent='end'>
                 <SocialIcon src='img/icon-twitter.svg' alt='Twitter' />
@@ -89,7 +92,7 @@ const OverviewToday = () => {
               </CardGridItem>
             </CardGrid>
           </Card>
-          <Card>
+          <Card onClick={handleOpenModal}>
             <CardGrid>
               <CardGridItem $areaName='one' $justifyContent='end'>
                 <SocialIcon src='img/icon-twitter.svg' alt='Twitter' />
@@ -104,7 +107,7 @@ const OverviewToday = () => {
               </CardGridItem>
             </CardGrid>
           </Card>
-          <Card>
+          <Card onClick={handleOpenModal}>
             <CardGrid>
               <CardGridItem $areaName='one' $justifyContent='end'>
                 <SocialIcon src='img/icon-youtube.svg' alt='YouTube' />
@@ -119,7 +122,7 @@ const OverviewToday = () => {
               </CardGridItem>
             </CardGrid>
           </Card>
-          <Card>
+          <Card onClick={handleOpenModal}>
             <CardGrid>
               <CardGridItem $areaName='one' $justifyContent='end'>
                 <SocialIcon src='img/icon-youtube.svg' alt='YouTube' />
