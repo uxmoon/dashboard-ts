@@ -6,6 +6,7 @@ declare module 'styled-components' {
       body: string
       bodyPattern: string
       card: string
+      cardHover: string
       text: string
       headings: string
       chart: string
