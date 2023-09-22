@@ -21,7 +21,7 @@ npm run dev
 
 ## Development
 
-- Data is hard coded to focus on building the UI.
+- Data is hard coded to focus on building the UI with mobile first approach.
 - `createContext` and `useContext` to open modal from child components.
 - Customize `react-toggle` based on design provided.
 
