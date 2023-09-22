@@ -1,7 +1,9 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 interface Props {
   $decrease?: boolean
+  $lg?: boolean
+  $noMargin?: boolean
 }
 
 export const StatsContainer = styled.p<Props>`
@@ -13,9 +15,16 @@ export const StatsContainer = styled.p<Props>`
   font-weight: 700;
 `
 
-export const StatsArrow = styled.img`
+export const StyledArrow = styled.img<Props>`
   display: inline-block;
   width: 0.5rem;
   height: 0.25rem;
-  margin-right: 0.5rem;
+  margin-right: ${({ $noMargin }) => ($noMargin ? 0 : '0.5rem')};
+
+  ${({ $lg }) =>
+    $lg &&
+    css`
+      width: 0.625rem;
+      height: 0.375rem;
+    `}
 `

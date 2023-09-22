@@ -1,5 +1,6 @@
 import { ReactNode } from 'react'
-import { StatsArrow, StatsContainer } from './styles'
+import { StatsContainer } from './styles'
+import Arrow from './Arrow'
 
 interface Props {
   children: ReactNode
@@ -9,11 +10,7 @@ interface Props {
 const Stats = ({ children, isDecrease }: Props) => {
   return (
     <StatsContainer $decrease={isDecrease}>
-      <StatsArrow
-        src={`img/icon-${isDecrease ? 'down' : 'up'}.svg`}
-        alt={isDecrease ? 'Decrease' : 'Increase'}
-      />{' '}
-      {children}
+      <Arrow isDecrease={isDecrease} /> {children}
     </StatsContainer>
   )
 }

@@ -1,10 +1,15 @@
 import Modal from '../Modal'
 import { SocialIcon } from '../SocialIcon'
-import { Flex } from '../helpers'
 import Chart from '../Chart'
-import { Head, Body } from './styles'
-import { Heading, Text, TextBig } from '../Typography'
-import Stats from '../Stats'
+import {
+  Head,
+  Body,
+  StatsNumbers,
+  StatsNumbersItem,
+  StatsNumbersLegend,
+} from './styles'
+import { Heading, Text } from '../Typography'
+import Arrow from '../Stats/Arrow'
 
 interface ModalStatsProps {
   isOpen: boolean
@@ -18,24 +23,32 @@ const ModalStats = ({ isOpen, onClose }: ModalStatsProps) => {
         <Heading as='h1' $marginBottom={1}>
           Facebook followers
         </Heading>
-        <Text $marginBottom={2.5} $isBold>
+        <Text $marginBottom={2} $isBold $isFlex>
           <SocialIcon src='img/icon-facebook.svg' alt='Facebook' />
           @nathanf
         </Text>
-        <Flex>
-          <TextBig>
-            1987 <Text as='span'>total followers</Text>
-          </TextBig>
-          <Stats>
-            81 <span>new followers in the past 10 days</span>
-          </Stats>
-          <Stats>
-            12 <span>new followers TODAY</span>
-          </Stats>
-        </Flex>
+        <StatsNumbers>
+          <StatsNumbersItem>
+            1987
+            <StatsNumbersLegend as='span'>total followers</StatsNumbersLegend>
+          </StatsNumbersItem>
+          <StatsNumbersItem $increase>
+            <Arrow lg noMargin /> 81
+            <StatsNumbersLegend as='span'>
+              new followers in the past 10 days
+            </StatsNumbersLegend>
+          </StatsNumbersItem>
+          <StatsNumbersItem $increase>
+            <Arrow lg noMargin />
+            12
+            <StatsNumbersLegend as='span'>
+              new followers TODAY
+            </StatsNumbersLegend>
+          </StatsNumbersItem>
+        </StatsNumbers>
       </Head>
       <Body>
-        <Text>May 4 - May 13</Text>
+        <Text $marginBottom={1}>May 4 - May 13</Text>
         <Chart />
       </Body>
     </Modal>

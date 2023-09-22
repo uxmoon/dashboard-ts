@@ -19,7 +19,7 @@ const Chart = () => {
         margin={{
           top: 12,
           right: 12,
-          left: 0,
+          left: -32,
         }}
       >
         <CartesianGrid strokeDasharray='3 3' />

@@ -7,6 +7,7 @@ interface Props {
   $flexDirection?: string
   $isUpper?: boolean
   $isBlock?: boolean
+  $isFlex?: boolean
   $hasTracking?: boolean
 }
 
@@ -30,11 +31,21 @@ export const Text = styled.p<Props>`
   font-size: 0.875rem;
   color: ${({ theme }) => theme.colors.text};
   font-weight: ${({ $isBold }) => ($isBold ? 700 : 400)};
+  margin-bottom: ${({ $marginBottom }) =>
+    $marginBottom ? $marginBottom + 'rem' : 0};
 
   ${({ $isBlock }) =>
     $isBlock &&
     css`
       display: block;
+    `}
+
+  ${({ $isFlex }) =>
+    $isFlex &&
+    css`
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
     `}
   ${({ $isUpper }) =>
     $isUpper &&
