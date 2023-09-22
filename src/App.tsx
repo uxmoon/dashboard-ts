@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
 import { ModalContext } from './context/ModalContext'
+import { DarkMode } from './context/DarkModeContext'
 
 import { GlobalStyles } from './styles/global'
 import { ThemeProvider } from 'styled-components'
@@ -9,8 +10,6 @@ import { darkTheme, lightTheme } from './styles/theme'
 import NavBar from './components/Navbar'
 import Overview from './components/Overview'
 import OverviewToday from './components/OverviewToday'
-import { Container, Flex } from './components/helpers'
-import Toggler from './components/Toggler'
 import ModalStats from './components/ModalStats'
 
 function App() {
@@ -33,20 +32,15 @@ function App() {
   return (
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
       <ModalContext.Provider value={{ handleOpenModal }}>
-        <GlobalStyles />
-        <header>
-          <Container $marginBottom={3}>
-            <Flex $justifyContent='space-between'>
-              <NavBar />
-              <Toggler toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
-            </Flex>
-          </Container>
-        </header>
-        <main>
-          <Overview />
-          <OverviewToday />
-        </main>
-        <ModalStats isOpen={isModalOpen} onClose={handleCloseModal} />
+        <DarkMode.Provider value={{ toggleTheme, isDarkTheme }}>
+          <GlobalStyles />
+          <NavBar />
+          <main>
+            <Overview />
+            <OverviewToday />
+          </main>
+          <ModalStats isOpen={isModalOpen} onClose={handleCloseModal} />
+        </DarkMode.Provider>
       </ModalContext.Provider>
     </ThemeProvider>
   )
