@@ -27,9 +27,6 @@ export const CloseButton = styled.button`
   background-color: transparent;
   width: 2.5rem;
   height: 2.5rem;
-
-  img {
-    width: 1rem;
-    height: 1rem;
-  }
+  font-size: 2rem;
+  color: ${({ theme }) => theme.colors.text};
 `

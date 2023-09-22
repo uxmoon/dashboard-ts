@@ -53,7 +53,7 @@ const Modal = ({
       {hasCloseBtn && (
         <CloseButton onClick={handleCloseModal}>
           <VisuallyHidden>Close</VisuallyHidden>
-          <img src='img/icon-close.svg' alt='Close' />
+          &times;
         </CloseButton>
       )}
       {children}

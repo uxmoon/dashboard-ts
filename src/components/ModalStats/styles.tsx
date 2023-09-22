@@ -8,16 +8,25 @@ interface Props {
 
 export const Head = styled.div`
   background-color: ${({ theme }) => theme.colors.bodyPattern};
-  padding: 2.75rem 3.75rem 1.25rem;
+  padding: 1.5rem 1rem 1rem;
+  @media (min-width: 48rem) {
+    padding: 2.75rem 3.75rem 1.25rem;
+  }
 `
 export const Body = styled.div`
   background-color: ${({ theme }) => theme.colors.body};
-  padding: 2rem 3.75rem;
+  padding: 1rem;
+
+  @media (min-width: 48rem) {
+    padding: 2rem 3.75rem;
+  }
 `
 
 export const StatsNumbers = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  @media (min-width: 48rem) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 `
 
 export const StatsNumbersItem = styled.p<Props>`
@@ -26,6 +35,7 @@ export const StatsNumbersItem = styled.p<Props>`
   gap: 0.25rem;
   font-size: 2.5rem;
   font-weight: 700;
+  color: ${({ theme }) => theme.colors.headings};
 
   ${({ $decrease, theme }) =>
     $decrease &&
