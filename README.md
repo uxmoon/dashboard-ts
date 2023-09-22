@@ -21,9 +21,13 @@ npm run dev
 
 ## Development
 
-- Create a light and dark theme with `styled components` and add theme provider.
 - `createContext` and `useContext` to open modal from child components.
 - Customize `react-toggle` based on design provided.
+
+### styled components
+
+- Create a light and dark theme with `styled components` and add theme provider.
+- Add modern css reset by [Andy Bell](https://andy-bell.co.uk/a-more-modern-css-reset/) to global styles.
 - Added definition file for `styled components` for theme file.
 
 ### Recharts
@@ -34,9 +38,9 @@ npm run dev
 
 ### Modal
 
-- Added reusable modal component with native `<dialog>` element
-- Use react modal to display stats chart
-- Hide close button label with css
+- Added reusable modal component with native `<dialog>` element.
+- Use react modal to display stats chart.
+- Hide close button label with css.
 
 ### Accessibility
 
@@ -47,6 +51,6 @@ Replaced green and red colors for better color contrast based on report made wit
 
 ## Pending
 
-- Store dark mode state in localStorage
-- Add loading skeleton
-- Add breakpoints list in styled components
+- Store dark mode state in localStorage.
+- Add loading skeleton.
+- Add breakpoints list in styled components.
