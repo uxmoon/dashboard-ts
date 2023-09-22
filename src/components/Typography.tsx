@@ -1,10 +1,13 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 interface Props {
   $marginBottom?: number
   $isBold?: boolean
   $size?: string
   $flexDirection?: string
+  $isUpper?: boolean
+  $isBlock?: boolean
+  $hasTracking?: boolean
 }
 
 const handleSize = ($size?: string) => {
@@ -27,15 +30,25 @@ export const Text = styled.p<Props>`
   font-size: 0.875rem;
   color: ${({ theme }) => theme.colors.text};
   font-weight: ${({ $isBold }) => ($isBold ? 700 : 400)};
-`
 
-export const TextStats = styled(Text)`
-  display: block;
-  text-transform: uppercase;
-  letter-spacing: 0.125rem;
-  @media (min-width: 60rem) {
-    letter-spacing: 0.25rem;
-  }
+  ${({ $isBlock }) =>
+    $isBlock &&
+    css`
+      display: block;
+    `}
+  ${({ $isUpper }) =>
+    $isUpper &&
+    css`
+      text-transform: uppercase;
+    `}
+  ${({ $hasTracking }) =>
+    $hasTracking &&
+    css`
+      letter-spacing: 0.125rem;
+      @media (min-width: 60rem) {
+        letter-spacing: 0.25rem;
+      }
+    `}
 `
 
 export const TextBig = styled(Text)`

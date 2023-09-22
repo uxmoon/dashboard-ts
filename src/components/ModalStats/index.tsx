@@ -3,7 +3,7 @@ import { SocialIcon } from '../SocialIcon'
 import { Flex } from '../helpers'
 import Chart from '../Chart'
 import { Head, Body } from './styles'
-import { Heading, Text } from '../Typography'
+import { Heading, Text, TextBig } from '../Typography'
 import Stats from '../Stats'
 
 interface ModalStatsProps {
@@ -23,11 +23,15 @@ const ModalStats = ({ isOpen, onClose }: ModalStatsProps) => {
           @nathanf
         </Text>
         <Flex>
-          <Text>
+          <TextBig>
             1987 <Text as='span'>total followers</Text>
-          </Text>
-          <Stats>81 new followers in the past 10 days</Stats>
-          <Stats>12 new followers TODAY</Stats>
+          </TextBig>
+          <Stats>
+            81 <span>new followers in the past 10 days</span>
+          </Stats>
+          <Stats>
+            12 <span>new followers TODAY</span>
+          </Stats>
         </Flex>
       </Head>
       <Body>
