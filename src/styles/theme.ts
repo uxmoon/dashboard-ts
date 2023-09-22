@@ -8,8 +8,8 @@ export const lightTheme = {
     headings: 'hsl(230, 17%, 14%)',
     chart: 'hsl(243, 51%, 70%)',
     primary: {
-      green: 'hsl(163, 72%, 41%)',
-      red: 'hsl(356, 69%, 56%)',
+      green: 'hsl(163, 73%, 28%)',
+      red: 'hsl(356, 69%, 49%)',
     },
     social: {
       facebook: 'hsl(195, 100%, 50%)',

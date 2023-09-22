@@ -1,6 +1,7 @@
 import { useRef, useEffect, useState, KeyboardEvent, ReactNode } from 'react'
 
 import { Dialog, CloseButton } from './styles'
+import { VisuallyHidden } from '../Typography'
 
 interface ModalProps {
   isOpen: boolean
@@ -50,7 +51,10 @@ const Modal = ({
   return (
     <Dialog ref={modalRef} onKeyDown={handleKeyDown}>
       {hasCloseBtn && (
-        <CloseButton onClick={handleCloseModal}>Close</CloseButton>
+        <CloseButton onClick={handleCloseModal}>
+          <VisuallyHidden>Close</VisuallyHidden>
+          &times;
+        </CloseButton>
       )}
       {children}
     </Dialog>

@@ -1,5 +1,6 @@
 import { useContext } from 'react'
 import { ModalContext } from '../context/ModalContext'
+
 import Card from '../components/Card'
 import { SocialIcon } from '../components/SocialIcon'
 import { Center, Container, Flex, Grid } from '../components/helpers'
