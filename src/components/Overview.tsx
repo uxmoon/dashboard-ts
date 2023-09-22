@@ -1,14 +1,17 @@
+import { useContext } from 'react'
+import { ModalContext } from '../context/ModalContext'
 import Card from '../components/Card'
 import { SocialIcon } from '../components/SocialIcon'
 import { Center, Container, Flex, Grid } from '../components/helpers'
-import { Text, TextBig, TextStats } from './Typography'
+import { Text, TextBig } from './Typography'
 import Stats from './Stats'
 
 const Overview = () => {
+  const { handleOpenModal } = useContext(ModalContext)
   return (
     <Container $marginBottom={3}>
       <Grid>
-        <Card hasBorder variant='facebook'>
+        <Card hasBorder variant='facebook' onClick={handleOpenModal}>
           <Flex
             $alignItems='center'
             $gap={0.5}
@@ -19,13 +22,16 @@ const Overview = () => {
             <Text>@nathanf</Text>
           </Flex>
           <TextBig>
-            1987 <TextStats as='span'>followers</TextStats>
+            1987{' '}
+            <Text $hasTracking $isBlock $isUpper as='span'>
+              followers
+            </Text>
           </TextBig>
           <Center>
             <Stats>12 Today</Stats>
           </Center>
         </Card>
-        <Card hasBorder variant='twitter'>
+        <Card hasBorder variant='twitter' onClick={handleOpenModal}>
           <Flex
             $alignItems='center'
             $gap={0.5}
@@ -36,13 +42,16 @@ const Overview = () => {
             <Text>@nathanf</Text>
           </Flex>
           <TextBig>
-            1044 <TextStats as='span'>followers</TextStats>
+            1044{' '}
+            <Text $hasTracking $isBlock $isUpper as='span'>
+              followers
+            </Text>
           </TextBig>
           <Center>
             <Stats>99 Today</Stats>
           </Center>
         </Card>
-        <Card hasBorder variant='instagram'>
+        <Card hasBorder variant='instagram' onClick={handleOpenModal}>
           <Flex
             $alignItems='center'
             $gap={0.5}
@@ -53,13 +62,16 @@ const Overview = () => {
             <Text>@realnathanf</Text>
           </Flex>
           <TextBig>
-            11k <TextStats as='span'>followers</TextStats>
+            11k{' '}
+            <Text $hasTracking $isBlock $isUpper as='span'>
+              followers
+            </Text>
           </TextBig>
           <Center>
             <Stats>1099 Today</Stats>
           </Center>
         </Card>
-        <Card hasBorder variant='youtube'>
+        <Card hasBorder variant='youtube' onClick={handleOpenModal}>
           <Flex
             $alignItems='center'
             $gap={0.5}
@@ -70,7 +82,10 @@ const Overview = () => {
             <Text>Nathan F.</Text>
           </Flex>
           <TextBig>
-            8239 <TextStats as='span'>subscribers</TextStats>
+            8239{' '}
+            <Text $hasTracking $isBlock $isUpper as='span'>
+              subscribers
+            </Text>
           </TextBig>
           <Center>
             <Stats isDecrease>144 Today</Stats>

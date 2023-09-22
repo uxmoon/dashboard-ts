@@ -1,5 +1,7 @@
 import { useState } from 'react'
 
+import { ModalContext } from './context/ModalContext'
+
 import { GlobalStyles } from './styles/global'
 import { ThemeProvider } from 'styled-components'
 import { darkTheme, lightTheme } from './styles/theme'
@@ -30,7 +32,7 @@ function App() {
 
   return (
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
-      <>
+      <ModalContext.Provider value={{ handleOpenModal }}>
         <GlobalStyles />
         <header>
           <Container $marginBottom={3}>
@@ -44,9 +46,8 @@ function App() {
           <Overview />
           <OverviewToday />
         </main>
-        <button onClick={handleOpenModal}>Open stats modal</button>
         <ModalStats isOpen={isModalOpen} onClose={handleCloseModal} />
-      </>
+      </ModalContext.Provider>
     </ThemeProvider>
   )
 }
