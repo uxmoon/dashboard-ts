@@ -92,3 +92,17 @@ export const StatsText = styled.p<Props>`
     font-weight: 400;
   }
 `
+
+export const VisuallyHidden = styled.span`
+  &:not(:focus):not(:active) {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+  }
+`

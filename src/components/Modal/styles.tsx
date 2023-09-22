@@ -15,8 +15,21 @@ export const Dialog = styled.dialog`
 
 export const CloseButton = styled.button`
   position: absolute;
-  top: 0.25em;
-  right: 0.25em;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 0.875rem;
   cursor: pointer;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  width: 2.5rem;
+  height: 2.5rem;
+
+  img {
+    width: 1rem;
+    height: 1rem;
+  }
 `
