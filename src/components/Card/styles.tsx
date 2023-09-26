@@ -27,6 +27,7 @@ export const StyledCard = styled.button<Props>`
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  text-align: left;
 
   &:hover,
   &:focus {
